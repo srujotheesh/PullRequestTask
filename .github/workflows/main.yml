@@ -7,4 +7,8 @@ jobs:
     steps:
       - name: Hello-world
         run: echo "Hello World!"
-
+      - name: Task start displaying files present
+        run: ls
+      - name: Create a document
+        run: touch task.txt
+      
