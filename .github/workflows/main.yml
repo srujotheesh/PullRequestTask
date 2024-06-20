@@ -11,5 +11,7 @@ jobs:
         run: ls
       - name: Create a document
         run: touch task.txt
+      - name: Edit the file
+        run: echo "Welcome to My Workflow actions" > task.txt
 
 
