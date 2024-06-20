@@ -1,0 +1,19 @@
+name: Workflow-task
+run-name: ${{Github.author}} is performing this actions
+on: [push]
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello-world
+        run: echo "Hello World!"
+      - name: Task
+        run: ls
+      - name: Create a document
+        run: touch task.txt
+      - name: Edit the document
+        run: vi task.txt
+      - name: Printing the document
+        run: cat tast.txt
+      - name: Displaying the files
+        run: ls
