@@ -11,4 +11,9 @@ jobs:
         run: ls
       - name: Create a document
         run: touch task.txt
-      
+      - name: Edit the file
+        run: cp "Welcome to My Workflow actions" task.txt
+      - name: Printing the document
+        run: cat tast.txt
+      - name: Displaying the files
+        run: ls
