@@ -1,0 +1,15 @@
+name: Workflow-task
+run-name: ${{github.actor}} is performing this actions
+on: [push]
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: creating a file
+        run: touch 21ALR045.txt
+      - name: printing current working directory
+        run: pwd
+      - name: listing all files and directories
+        run: ls -lrt
+      - name: display current date and time
+        run: date
