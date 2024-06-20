@@ -1,5 +1,5 @@
 name: Workflow-task
-run-name: ${{Github.author}} is performing this actions
+run-name: ${{github.actor}} is performing this actions
 on: [push]
 jobs:
   my-job:
@@ -14,7 +14,7 @@ jobs:
       - name: Edit the file
         run: echo "Welcome to My Workflow actions" > task.txt
       - name: Printing the document
-        run: cat tast.txt
+        run: cat task.txt
       - name: Displaying the files
         run: ls
 
